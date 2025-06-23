@@ -31,7 +31,7 @@
 
 1. Clonar el repositorio:
 
-```bash
+
 git clone https://github.com/Estudiante10-ui/Trabajo4A_HansVidal
 cd Trabajo4A_HansVidal
 
@@ -43,8 +43,9 @@ npm install
 
 ionic serve
 
+---
 
-🧪 Problemas enfrentados
+##🧪 Problemas enfrentados
 
 *El uso de caracteres especiales (como ñ) en variables (contraseña) causaba errores de compilación. Fue corregido cambiando el nombre a clave.
 
