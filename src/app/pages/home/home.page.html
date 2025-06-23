@@ -3,10 +3,31 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Inicio</ion-title>
+    <ion-title>Bienvenido a PetTracker</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <h2 style="text-align:center;">Bienvenidos a PetTracker</h2>
+<ion-content class="ion-padding" scroll-y="false">
+  <div class="home-container" style="text-align: center;">
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+     alt="Pet Image"
+     width="150"
+     style="display: block; margin: 30px auto 0 auto; border-radius: 20px;" />
+
+    <h2 style="margin-top: 20px;">Tu app para rastrear y cuidar a tus mascotas</h2>
+    <p style="color: #555;">
+      Registra, rastrea y mantén el control de la salud y ubicación de tus peludos amigos en un solo lugar.
+    </p>
+
+    <ion-button expand="block" color="primary" routerLink="/login">
+  Iniciar Sesión
+</ion-button>
+
+<ion-button expand="block" color="secondary" routerLink="/registro">
+  Registrarse
+</ion-button>
+
+  </div>
 </ion-content>
+
+

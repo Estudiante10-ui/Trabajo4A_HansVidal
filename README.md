@@ -1,62 +1,54 @@
-# PetTracker
+# PetTracker 🐾
 
-Aplicación móvil desarrollada con Ionic y Angular.
+**PetTracker** es una aplicación móvil desarrollada con **Ionic + Angular** que permite a los usuarios registrar mascotas, rastrearlas y gestionar su información. Este repositorio corresponde al avance del 50% del desarrollo, enmarcado en la Parte A de la Unidad 4 del curso.
 
-## Descripción
+---
 
-Este proyecto corresponde a la cáscara de navegación de la aplicación **PetTracker**, diseñada en el marco de la asignatura. La app incluye estructura de navegación entre páginas mediante un menú lateral. Actualmente no contiene lógica funcional ni contenidos reales, solo navegación y maquetación básica.
+## 📱 Funcionalidades implementadas
 
-## Desarrollado por
+- Pantalla **Home** con bienvenida, descripción e imagen.
+- Botones para **Iniciar sesión** y **Registrarse**, que redirigen correctamente a sus respectivas páginas.
+- Página **Registro** con formulario funcional que almacena los datos y muestra un mensaje de éxito.
+- Página **Perfil** con formulario editable de datos ficticios y botón para cerrar sesión.
+- Página **Buscar** con tarjetas de mascotas. Cada tarjeta permite rastrear una mascota mostrando una dirección ficticia al presionar el botón.
+- Menú lateral funcional en todas las páginas.
+- Uso de **componentes visuales** como `ion-card`, `ion-button`, `ion-input`, `ion-toast` y `ion-menu`.
 
-**Hans Vidal**
+---
 
-## 🧱 Estructura del Proyecto
+## 🧩 Componentes utilizados
 
-El proyecto contiene las siguientes páginas:
+- `ion-card`: para mostrar tarjetas de mascotas.
+- `ion-button`: navegación y acciones.
+- `ion-toast`: notificación de registro exitoso.
+- `ion-input`: captura de datos en formularios.
+- `ion-menu`: navegación lateral.
+- `ngModel` y `*ngIf`, `*ngFor`: para control de flujo.
 
-- Home
-- Login
-- Registro
-- Perfil
-- Mascota
-- Alertas
-- Buscar
+---
 
-## Instrucciones de Instalación
+## 🛠️ Instrucciones de instalación
 
-1. descarga este repositorio y accede a la carpeta del proyecto:
+1. Clonar el repositorio:
 
-    cd pettracker
+```bash
+git clone https://github.com/Estudiante10-ui/Trabajo4A_HansVidal
+cd Trabajo4A_HansVidal
 
-2. Instala las dependencias necesarias:
+2. Instalar dependencias:
 
-    npm install
+npm install
 
-3. Ejecuta la aplicación en el navegador:
+3. Ejecutar la aplicación:
 
-    ionic serve
-
-⚠️ Asegúrate de tener instalado Ionic CLI. Si no lo tienes:
-
-    npm install -g @ionic/cli
+ionic serve
 
 
-## Problemas enfrentados
+🧪 Problemas enfrentados
 
-Se detectaron errores en los módulos generados automáticamente (duplicación de carpetas como home/home, conflictos con standalone).
-Ajustes en app-routing.module.ts y organización de carpetas para lograr rutas limpias.
-El menú lateral no se cerraba automáticamente; se resolvió agregando menuClose en cada enlace.
-Dificultad al centrar la app en el navegador: finalmente se utilizó el modo móvil del navegador (F12 > Responsive).
+*El uso de caracteres especiales (como ñ) en variables (contraseña) causaba errores de compilación. Fue corregido cambiando el nombre a clave.
 
-## Herramientas utilizadas
+*Problemas con el reconocimiento de ngModel y *ngFor al no importar CommonModule y FormsModule en componentes standalone.
 
-Ionic CLI: v7.x
-Angular: v19.x
-Node.js: v22.x
-NPM: v10.x
+*Ajustes de estilo y centrado de contenido, especialmente en la página Home.
 
-## Observaciones
-
-El menú lateral es visible en todas las páginas y funciona correctamente.
-La aplicación puede ser visualizada correctamente como versión móvil usando herramientas del navegador (modo desarrollador).
-El contenido de cada página aún está vacío, pues esta versión representa la estructura básica de navegación.
